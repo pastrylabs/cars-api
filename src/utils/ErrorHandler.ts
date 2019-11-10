@@ -7,6 +7,9 @@ export const notFoundError = () => {
 
 export const clientError = (err: Error, res: Response, next: NextFunction) => {
   if (err instanceof HTTPClientError) {
+    // Some might think this is ugly
+    // But I prefer having as much information available in logs as possible
+    // This could also be useful in test annotations from CI/CD
     console.warn(err);
     res.status(err.statusCode).send(err.message);
   } else {
