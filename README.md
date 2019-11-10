@@ -4,7 +4,7 @@
 
 - `npm run test` to test
 
-- `npm run start` to start in cluster mode using pm2 (let's say productionish)
+- `npm run build && npm run start` to start in cluster mode using pm2 (let's say productionish)
 
 # Notes
 
