@@ -16,4 +16,5 @@
 - I wrote Integration Tests with `Supertest`
 - I used `jest` for unit test
 - Ideally I use `swagger-ui-express` & `swagger.json` to generate docs for express API's. I implemented a middleware at `./src/middleware/apiDocs.ts` to show how I would do it.
+- Also, instead on using pm2 I prefer using Docker to run multiple instances on a host server. (happy to discuss why)
 - Also this is my goto place for Node best practices https://twitter.com/nodepractices/. But it is not complete. yet!
